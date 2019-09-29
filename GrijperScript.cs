@@ -215,15 +215,13 @@ namespace GrijperScript
             var newline = Environment.NewLine;
             var methode = _config.Hit ? "raak" : "mis";
             var t =
-                $"Status: {_ScriptState} {newline} " +
-                $"hendelid: {_config.SwitchId} {newline} " +
-                $"hoek: {_config.Corner.X},{_config.Corner.Y} {newline} " +
+                $"Status: {_ScriptState} {newline}" +
+                $"hendelid: {_config.SwitchId} {newline}" +
+                $"hoek: {_config.Corner.X},{_config.Corner.Y} {newline}" +
                 $"Methode: {methode} {newline}" +
-                $"currentLoc: {location0.X},{location0.Y} - {location1.X},{location1.Y} {newline} " +
-                $"playerTegels: {_config.PlayerTile0},{_config.PlayerTile1} {newline} " +
-                $"playerTegelsLoc: {locationPlayerTile0.X},{locationPlayerTile0.Y} - {locationPlayerTile1.X},{locationPlayerTile1.Y} {newline} " +
+                $"currentLoc: {location0.X},{location0.Y} - {location1.X},{location1.Y} {newline}" +
+                $"playerTegelsLoc: {locationPlayerTile0.X},{locationPlayerTile0.Y} - {locationPlayerTile1.X},{locationPlayerTile1.Y} {newline}" +
                 $"LastMove: {lastMove0.X},{lastMove0.Y}  - {lastMove1.X},{lastMove1.Y}" +
-
                 "";
             statusmessage.Text = t;
         }
